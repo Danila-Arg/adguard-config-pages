@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdGuard Configuration Import</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        
+        .config-section {
+            margin: 30px 0;
+            padding: 25px;
+            border: 2px solid #e1e8ed;
+            border-radius: 8px;
+            background-color: #fafbfc;
+        }
+        
+        .config-section h2 {
+            color: #34495e;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .config-description {
+            margin-bottom: 20px;
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        .import-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .import-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+            text-decoration: none;
+            color: white;
+        }
+        
+        .features-list {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        
+        .features-list li {
+            margin: 8px 0;
+            color: #555;
+        }
+        
+        .warning {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+            color: #856404;
+        }
+        
+        .info {
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+            color: #0c5460;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛡️ AdGuard Configuration Import</h1>
+        
+        <div class="info">
+            <strong>Инструкция:</strong> Нажмите на одну из кнопок ниже, чтобы импортировать конфигурацию AdGuard. Выберите подходящий вариант в зависимости от ваших потребностей.
+        </div>
+        
+        <div class="config-section">
+            <h2>📋 Базовая конфигурация (без сжатия)</h2>
+            <div class="config-description">
+                Стандартная конфигурация AdGuard с базовыми настройками блокировки рекламы и защиты.
+            </div>
+            <ul class="features-list">
+                <li>Базовые фильтры блокировки рекламы</li>
+                <li>Защита от трекинга</li>
+                <li>Стандартные настройки DNS</li>
+                <li>Базовые правила пользователя</li>
+            </ul>
+            <a href="adguard:import_user_configuration?scheme_version=3&d_0=CAMYASINGgs3Ny43Ljc3NzcuMCi0+ofQBA==&d_1=CAMYAiI+CAEQATABQgIBD0oGU3lzdGVtWAFiBQECAwQFgAEB4AEB6gEOMjA4LjU0LjEwNC4xODSYArQBuAIBwgICCAEouoXF+ws=&d_2=CAMYBCIUChJVc2VyIHJ1bGVzICh1cmw6ICko5/GYxww=&d_3=CAMYAyIUChJVc2VyIHJ1bGVzICh1cmw6ICko5/GYxww=&d_4=CAMYBSKfAgpDaHR0cHM6Ly91c2Vyc2NyaXB0cy5hZHRpZHkub3JnL2JldGEvYXNzaXN0YW50LzQuMy9hc3Npc3RhbnQudXNlci5qcwpLaHR0cHM6Ly91c2Vyc2NyaXB0cy5hZHRpZHkub3JnL2JldGEvYWRndWFyZC1leHRyYS8xLjAvYWRndWFyZC1leHRyYS51c2VyLmpzCkpodHRwczovL3VzZXJzY3JpcHRzLmFkdGlkeS5vcmcvYmV0YS9wb3B1cC1ibG9ja2VyLzIuNS9wb3B1cGJsb2NrZXIudXNlci5qcwo/aHR0cHM6Ly91c2Vyc2NyaXB0cy5hZHRpZHkub3JnL2JldGEvYWRndWFyZC13b3QvMS4wL3dvdC51c2VyLmpz" class="import-button">
+                Импортировать базовую конфигурацию
+            </a>
+        </div>
+        
+        <div class="config-section">
+            <h2>🚀 Расширенная конфигурация (с сжатием)</h2>
+            <div class="config-description">
+                Улучшенная конфигурация с дополнительными пользовательскими скриптами и оптимизированными настройками.
+            </div>
+            <ul class="features-list">
+                <li>Все функции базовой конфигурации</li>
+                <li><strong>3 дополнительных пользовательских скрипта:</strong></li>
+                <li>• YouTube Tools - инструменты для работы с YouTube</li>
+                <li>• YouTube Enhancer - улучшенный интерфейс YouTube</li>
+                <li>• YouTube去广告 - дополнительная блокировка рекламы на YouTube</li>
+                <li>Оптимизированные настройки с применением сжатия</li>
+            </ul>
+            <a href="adguard:import_user_configuration?scheme_version=3&d_0=CAMYASINGgs3Ny43Ljc3NzcuMCi0+ofQBA==&d_1=CAMYAiJFCAEQATABQgIBD0oGU3lzdGVtWAFiDAECAwQFdswB4QH7AYABAeABAeoBDjIwOC41NC4xMDQuMTg0mAK0AbgCAcICAggBKNyh+qsF&d_2=CAMYBCIUChJVc2VyIHJ1bGVzICh1cmw6ICko5/GYxww=&d_3=CAMYAyIUChJVc2VyIHJ1bGVzICh1cmw6ICko5/GYxww=&d_4=CAMSBmJyb3RsaRgFIvkCCwpDaHR0cHM6Ly91c2Vyc2NyaXB0cy5hZHRpZHkub3JnL2JldGEvYXNzaXN0YW50LzQuM4oOLoQ0LmpzCkulRWRndWFyZC1leHRyYS8xLjCOEolNSqSScG9wdXAtYmxvY2tlci8yLjWGEocRiZk/rJl3b3SFl4MIidpXidpwZGF0ZS5ncmVhc3lmb3JrhdmH7C80NTk1NDEvWW91VHViZSVFNSU4RSVCQoQJQjklQkaEEjkxJThBieYBmwEBplo1NDU2NTEvRW5oYW5jZXIlMjCDfYMGiWsyJTg0JUEyJTNBgxxOZXeDIkxheW91dCUyQ4MuVmlkZW+DNkRvd25sb2FkhEOEGGFuZINMTW9yZYNTRmVhdHVyZXOJ9wGmp540NjA2ODCE+HSE+DIwVG9vbHODpUFsbIOraW6DsG9uhGNsb2NhhBNkh4iDyW1wM4UGNIPVSElHVIPcUVVBTElUWYPmcmWDkoQ/ZGlzbGlrZYRVhrRtg7SIqQMo2Pzgowo=" class="import-button">
+                Импортировать расширенную конфигурацию
+            </a>
+        </div>
+        
+        <div class="warning">
+            <strong>⚠️ Внимание:</strong> Для импорта конфигурации у вас должен быть установлен AdGuard. Ссылки работают только при наличии установленного приложения AdGuard на вашем устройстве.
+        </div>
+        
+        <div class="info">
+            <strong>ℹ️ Примечание:</strong> Расширенная конфигурация использует сжатие данных для оптимизации передачи настроек и включает дополнительные пользовательские скрипты для улучшения работы с YouTube.
+        </div>
+    </div>
+</body>
+</html>
